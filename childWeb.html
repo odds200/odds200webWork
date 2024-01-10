@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+
+body {
+font-family: Arial, sans-serif;
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+/* 使用视口高度作为全屏高度，确保充分的加载空间 */
+background-image: url('background.jpg');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+/* 更新后的导航栏样式 */
+.navbar {
+      overflow: hidden;
+      background-color: #7e6a29;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center; /* 居中 */
+      transition: 0.4s;
+    }
+
+    .navbar a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      margin: 0 10px; /* 增加间隔 */
+    }
+
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .main {
+      margin-top: 40px;
+    }
+
+
+    /* 当导航栏缩小时的样式 */
+    .navbar.shrink {
+      padding: 10px 16px;
+    }
+
+    .main {
+      margin-top: 40px;
+      padding: 16px;
+    }
+
+    .section {
+      border: 1px solid #ccc;
+      margin: 10px;
+      padding: 10px;
+      overflow-wrap: break-word;
+      display: flex;
+      align-items: center;
+      justify-content: center; /* 内容居中 */
+    }
+
+    .section img {
+      width: 150px;
+      margin-right: 10px;
+    }
+
+    /* 图片在右侧的样式 */
+    .section.right img {
+      order: 2;
+      margin-right: 0;
+      margin-left: 10px;
+    }
+
+
+    @keyframes inkSpreadAnimation {
+  0% {
+  transform: scale(0);
+  opacity: 0.7;
+  }
+  100% {
+  transform: scale(2);
+  opacity: 0;
+  }
+}
+
+.ink-spread {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.7); /* 模拟墨水颜色 */
+  border-radius: 50%;
+  animation: inkSpreadAnimation 5s ease-in-out;
+}
+
+
+
+
+  </style>
+</head>
+<body>
+
+  <!-- 导航栏 -->
+  <div class="navbar">
+    <a href="https://odds200.github.io/odds2000/">首页</a>
+    <a href="https://cainiao246.github.io/atry/">实物展示</a>
+    <a href="https://cainiao246.github.io/antry/">视频欣赏</a>
+    <!-- 更多链接 -->
+  </div>
+
+  <!-- 页面主要内容 -->
+</br></br></br></br></br></br></br>
+  <div class="main">
+    <div class="section">
+      <img src="guocheng.png" alt="图片描述">
+      <p>宣纸的制作工序大致可分为十八道，如果细分，则可超过百道。其中有保密工序，不为外人所知。伐条宣纸的传统做法是，将青檀树的枝条先蒸，再浸泡，然后剥皮，晒干后，加入石灰与纯碱（或草碱）再蒸，去其杂质，洗涤后，将其撕成细条，晾在朝阳之地，经过日晒雨淋会变白。然后将细条打浆入胶：把加工后的皮料与草料分别进行打浆，并加入植物胶（如杨桃藤汁）充分搅匀，用竹帘抄成纸，再刷到炕上烤干、剪裁后整理成张。宣纸的每个制作过程所用的工具皆十分讲究。如捞纸用的竹帘，就需要用到纹理直，骨节长，质地疏松的苦竹。宣纸的选料同样非常讲究。青檀树皮以两年以上生的枝条为佳，稻草一般采用砂田里长的稻草（其木素和灰分含量比普通泥田生长的稻草低）。</p>
+    </div>
+
+    <div class="section right">
+      <img src="图片2的URL" alt="图片描述">
+      <p>宣纸的制作工艺是一个复杂且需要多道工序的过程。下面分别分析每个步骤的作用：
+      </br>1. **伐条与蒸煮**：
+           - 作用：通过伐条，将青檀树的枝条获得，然后经过蒸煮的过程，使得枝条更易于剥皮和后续的处理。
+          </br></br>2. **浸泡**：
+           - 作用：使得青檀树枝条的纤维更加柔软，便于后续剥皮。
+          </br></br> 3. **剥皮**：
+           - 作用：去除青檀树枝条的外皮，以准备后续的处理。
+          </br></br> 4. **晒干**：
+           - 作用：去除多余的水分，准备加入石灰和纯碱的处理。
+          </br></br> 5. **加入石灰与纯碱（或草碱）再蒸**：
+           - 作用：去除杂质，使得纸张更加纯净。
+          </br></br> 6. **洗涤**：
+           - 作用：进一步去除残留的杂质，使得纸张更加干净。
+          </br></br> 7. **撕成细条**：
+           - 作用：为了后续打浆做准备，使得纤维更加细腻。
+          </br></br> 8. **日晒雨淋**：
+           - 作用：使得纸张逐渐变白，增加其光泽度和质感。
+          </br></br> 9. **打浆**：
+           - 作用：将皮料和草料进行打浆，使得纸张的纤维更加紧密。
+          </br></br>  10. **加入植物胶**：
+            - 作用：增加纸张的韧性和稳定性。
+          </br></br>  11. **竹帘抄纸**：
+            - 作用：使得纸张的厚度和平整度得以控制。
+          </br></br> 12. **刷到炕上烤干**：
+            - 作用：加速纸张的干燥过程。
+          </br></br> 13. **剪裁整理**：
+            - 作用：修剪和整理纸张，使其达到标准尺寸和质量。
+        每一步骤都对最终的宣纸质量有着决定性的影响，而每一道工序都有其特定的技术和经验要求。</p>
+    </div>
+
+    <!-- 更多部分 -->
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script>
+  $(document).ready(function() {
+    // 您的jQuery代码
+    $(window).scroll(function() {
+      scrollFunction();
+    });
+  
+    function scrollFunction() {
+      var navbar = $('.navbar');
+      if ($(document.body).scrollTop() > 20 || $(document.documentElement).scrollTop() > 20) {
+        navbar.addClass("shrink");
+      } else {
+        navbar.removeClass("shrink");
+      }
+    }
+  });
+
+  
+  function createInkSpread() {
+    var bodyWidth = document.body.offsetWidth;
+    var bodyHeight = document.body.offsetHeight;
+    var ink = document.createElement("div");
+    ink.className = "ink-spread";
+    ink.style.position = "absolute";
+    ink.style.left = Math.random() * bodyWidth + "px";
+    ink.style.top = Math.random() * bodyHeight + "px";
+    // 将墨水涟漪添加到body
+    document.body.appendChild(ink);
+    // 动画完成后移除墨水涟漪
+    ink.addEventListener("animationend", function() {
+      document.body.removeChild(this);
+    });
+  }
+  // 每隔一定时间创建一个新的墨水涟漪
+  setInterval(createInkSpread, 3000);
+  </script>
+  
+</body>
+</html>
