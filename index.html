@@ -11,7 +11,7 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 /* 使用视口高度作为全屏高度，确保充分的加载空间 */
-background-image: url('background2.png');
+background-image: url('background.jpg');
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-size: cover;
@@ -44,6 +44,9 @@ background-size: cover;
 
     .main {
       margin-top: 40px;
+      max-width: 75%; /* 设置正文框架的最大宽度为页面的四分之三 */
+margin: 0 auto; /* 居中对齐 */
+text-align: left; /* 左对齐 */
     }
 
 
@@ -79,6 +82,26 @@ background-size: cover;
       margin-left: 10px;
     }
 
+    .title {
+      cursor: pointer;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .image {
+      display: none;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .image-container {
+      width: 100%;
+      max-width: 1000px;
+      height: auto;
+      border: 1px solid #ccc;
+      overflow: hidden;
+    }
 
     @keyframes inkSpreadAnimation {
   0% {
@@ -119,39 +142,43 @@ background-size: cover;
   <div class="main">
     <div class="section">
       <img src="guocheng.png" alt="图片描述">
-      <p>宣纸的制作工序大致可分为十八道，如果细分，则可超过百道。其中有保密工序，不为外人所知。伐条宣纸的传统做法是，将青檀树的枝条先蒸，再浸泡，然后剥皮，晒干后，加入石灰与纯碱（或草碱）再蒸，去其杂质，洗涤后，将其撕成细条，晾在朝阳之地，经过日晒雨淋会变白。然后将细条打浆入胶：把加工后的皮料与草料分别进行打浆，并加入植物胶（如杨桃藤汁）充分搅匀，用竹帘抄成纸，再刷到炕上烤干、剪裁后整理成张。宣纸的每个制作过程所用的工具皆十分讲究。如捞纸用的竹帘，就需要用到纹理直，骨节长，质地疏松的苦竹。宣纸的选料同样非常讲究。青檀树皮以两年以上生的枝条为佳，稻草一般采用砂田里长的稻草（其木素和灰分含量比普通泥田生长的稻草低）。</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;宣纸的制作工序大致可分为十八道，如果细分，则可超过百道。其中有保密工序，不为外人所知。伐条宣纸的传统做法是，将青檀树的枝条先蒸，再浸泡，然后剥皮，晒干后，加入石灰与纯碱（或草碱）再蒸，去其杂质，洗涤后，将其撕成细条，晾在朝阳之地，经过日晒雨淋会变白。然后将细条打浆入胶：把加工后的皮料与草料分别进行打浆，并加入植物胶（如杨桃藤汁）充分搅匀，用竹帘抄成纸，再刷到炕上烤干、剪裁后整理成张。宣纸的每个制作过程所用的工具皆十分讲究。如捞纸用的竹帘，就需要用到纹理直，骨节长，质地疏松的苦竹。宣纸的选料同样非常讲究。青檀树皮以两年以上生的枝条为佳，稻草一般采用砂田里长的稻草（其木素和灰分含量比普通泥田生长的稻草低）。</p>
     </div>
 
     <div class="section right">
-      <img src="图片2的URL" alt="图片描述">
+      <div id="slideshow">
+        
       <p>宣纸的制作工艺是一个复杂且需要多道工序的过程。下面分别分析每个步骤的作用：
-      </br>1. **伐条与蒸煮**：
+        <div class="title" onclick="showImage('image1')">1. **伐条与蒸煮**：</div>
            - 作用：通过伐条，将青檀树的枝条获得，然后经过蒸煮的过程，使得枝条更易于剥皮和后续的处理。
-          </br></br>2. **浸泡**：
+          </br></br><div class="title" onclick="showImage('image2')">2. **浸泡**：</div>
            - 作用：使得青檀树枝条的纤维更加柔软，便于后续剥皮。
-          </br></br> 3. **剥皮**：
+          </br></br><div class="title" onclick="showImage('image3')"> 3. **剥皮**：</div>
            - 作用：去除青檀树枝条的外皮，以准备后续的处理。
-          </br></br> 4. **晒干**：
+          </br></br><div class="title" onclick="showImage('image4')"> 4. **晒干**：</div>
            - 作用：去除多余的水分，准备加入石灰和纯碱的处理。
-          </br></br> 5. **加入石灰与纯碱（或草碱）再蒸**：
+          </br></br><div class="title" onclick="showImage('image5')"> 5. **加入石灰与纯碱（或草碱）再蒸**：</div>
            - 作用：去除杂质，使得纸张更加纯净。
-          </br></br> 6. **洗涤**：
+          </br></br><div class="title" onclick="showImage('image6')"> 6. **洗涤**：</div>
            - 作用：进一步去除残留的杂质，使得纸张更加干净。
-          </br></br> 7. **撕成细条**：
+          </br></br> <div class="title" onclick="showImage('image7')">7. **撕成细条**：</div>
            - 作用：为了后续打浆做准备，使得纤维更加细腻。
-          </br></br> 8. **日晒雨淋**：
+          </br></br> <div class="title" onclick="showImage('image8')">8. **日晒雨淋**：</div>
            - 作用：使得纸张逐渐变白，增加其光泽度和质感。
-          </br></br> 9. **打浆**：
+          </br></br> <div class="title" onclick="showImage('image9')">9. **打浆**：</div>
            - 作用：将皮料和草料进行打浆，使得纸张的纤维更加紧密。
-          </br></br>  10. **加入植物胶**：
+          </br></br> <div class="title" onclick="showImage('image10')"> 10. **加入植物胶**：</div>
             - 作用：增加纸张的韧性和稳定性。
-          </br></br>  11. **竹帘抄纸**：
+          </br></br> <div class="title" onclick="showImage('image11')">11. **竹帘抄纸**：</div>
             - 作用：使得纸张的厚度和平整度得以控制。
-          </br></br> 12. **刷到炕上烤干**：
+          </br></br><div class="title" onclick="showImage('image12')"> 12. **刷到炕上烤干**：</div>
             - 作用：加速纸张的干燥过程。
-          </br></br> 13. **剪裁整理**：
+          </br></br> <div class="title" onclick="showImage('image13')">13. **剪裁整理**：</div>
             - 作用：修剪和整理纸张，使其达到标准尺寸和质量。
         每一步骤都对最终的宣纸质量有着决定性的影响，而每一道工序都有其特定的技术和经验要求。</p>
+    </div>
+    <div class="image-container" id="image-container">
+      <img id="image" class="image" src="">
     </div>
 
     <!-- 更多部分 -->
@@ -175,6 +202,36 @@ background-size: cover;
       }
     }
   });
+
+  //图片交互
+  var imageAddresses = {
+      image1: "step1.png",
+      image2: "step2.png",
+      image3: "step3.png",
+      image4: "step4.png", 
+      image5: "step5.png", 
+      image6: "step6.png", 
+      image7: "step7.png", 
+      image8: "step8.png", 
+      image9: "step9.png", 
+      image10: "step10.png", 
+      image11: "step11.png", 
+      image12: "step12.png", 
+      image13: "step13.png"
+    };
+
+    function showImage(imageId) {
+      var imageContainer = document.getElementById("image-container");
+      var image = document.getElementById("image");
+      image.src = imageAddresses[imageId];
+      imageContainer.style.display = "block";
+    }
+
+    var imageElements = document.getElementsByClassName("image");
+    for (var i = 0; i < imageElements.length; i++) {
+      var imageId = imageElements[i].id;
+      imageElements[i].src = imageAddresses[imageId];
+    }
 
   
   function createInkSpread() {
