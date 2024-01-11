@@ -63,7 +63,8 @@ text-align: left; /* 左对齐 */
       overflow-wrap: break-word;
       display: flex;
       align-items: center;
-      justify-content: center; /* 内容居中 */
+      justify-content: flex-start; /* 内容居中 */
+      gap:10px;
     }
 
     .section img {
@@ -95,8 +96,7 @@ text-align: left; /* 左对齐 */
     }
 
     .content {
-      float: left;
-      width: 70%;
+      flex-grow: 1; 
     }
 
     @keyframes inkSpreadAnimation {
