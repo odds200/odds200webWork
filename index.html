@@ -80,7 +80,6 @@ text-align: left; /* 左对齐 */
     }
 
     .image {
-      float:right;
       width: 100%;
       height: auto;
       object-fit: cover;
@@ -88,11 +87,17 @@ text-align: left; /* 左对齐 */
 
     .image-container {
       float:right;
+       width: 30%;
       width: 100%;
       max-width: 250px;
       height: auto;
       border: 1px solid #ccc;
       overflow: hidden;
+    }
+
+    .content {
+      float: left;
+      width: 70%;
     }
 
     @keyframes inkSpreadAnimation {
@@ -137,6 +142,7 @@ text-align: left; /* 左对齐 */
       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;宣纸的制作工序大致可分为十八道，如果细分，则可超过百道。其中有保密工序，不为外人所知。伐条宣纸的传统做法是，将青檀树的枝条先蒸，再浸泡，然后剥皮，晒干后，加入石灰与纯碱（或草碱）再蒸，去其杂质，洗涤后，将其撕成细条，晾在朝阳之地，经过日晒雨淋会变白。然后将细条打浆入胶：把加工后的皮料与草料分别进行打浆，并加入植物胶（如杨桃藤汁）充分搅匀，用竹帘抄成纸，再刷到炕上烤干、剪裁后整理成张。宣纸的每个制作过程所用的工具皆十分讲究。如捞纸用的竹帘，就需要用到纹理直，骨节长，质地疏松的苦竹。宣纸的选料同样非常讲究。青檀树皮以两年以上生的枝条为佳，稻草一般采用砂田里长的稻草（其木素和灰分含量比普通泥田生长的稻草低）。</p>
     </div>
    <div class="main">
+     <div class="content">
       <p>宣纸的制作工艺是一个复杂且需要多道工序的过程。下面分别分析每个步骤的作用：
         <div class="title" onclick="showImage('image1')">1. **伐条与蒸煮**：</div>
            - 作用：通过伐条，将青檀树的枝条获得，然后经过蒸煮的过程，使得枝条更易于剥皮和后续的处理。
@@ -164,7 +170,7 @@ text-align: left; /* 左对齐 */
             - 作用：加速纸张的干燥过程。
           </br></br> <div class="title" onclick="showImage('image13')">13. **剪裁整理**：</div>
             - 作用：修剪和整理纸张，使其达到标准尺寸和质量。
-        每一步骤都对最终的宣纸质量有着决定性的影响，而每一道工序都有其特定的技术和经验要求。</p></div>
+        每一步骤都对最终的宣纸质量有着决定性的影响，而每一道工序都有其特定的技术和经验要求。</p></div></div>
     </div>
     <div class="image-container" id="image-container">
       <img id="image" class="image" src="">
